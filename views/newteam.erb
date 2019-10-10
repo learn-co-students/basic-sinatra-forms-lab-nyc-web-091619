@@ -8,13 +8,15 @@
 
 <h2>CREATE A BASKETBALL TEAM!</h2>
     <form method="POST" action "/team">
-        Team name: <input type="text" name="name">
-        Coach: <input type="text" name="coach">
-        Point Guard: <input type="text" name="pg">
-        Shooting Guard: <input type="text" name="sg">
-        Small Forward: <input type="text" name="pf">
-        Power Forward: <input type="text" name="sf">
-        Center: <input type="text" name="c">
+    <input type="hidden" name="_method" value="PATCH">
+<% binding.pry %>
+        <p>Team name: <input type="text" name="name"></p>
+        <p>Coach: <input type="text" name="coach"></p>
+        <p>Point Guard: <input type="text" name="pg"></p>
+        <p>Shooting Guard: <input type="text" name="sg"></p>
+        <p>Small Forward: <input type="text" name="pf"></p>
+        <p> Power Forward: <input type="text" name="sf"></p>
+        <p>Center: <input type="text" name="c"></p>
         <input type="submit" value="Submit">
     <form>
  </body>
